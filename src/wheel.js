@@ -161,6 +161,8 @@ export class Wheel {
       this._itemLabelFontSize = Math.min(this._itemLabelFontSize, util.getFontSizeToFit(item.label, this.itemLabelFont, this._labelMaxWidth, this._context));
     }
 
+    this._itemLabelFontSize = window.pcWheelItemLabelFontSize
+
     this.refresh();
 
   }
